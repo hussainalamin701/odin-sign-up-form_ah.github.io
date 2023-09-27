@@ -1,8 +1,10 @@
 *{
     box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
 }
 
 body{
+    font-family: inherit;
     box-sizing: inherit;
     padding: 0;
     margin: 0;
@@ -10,29 +12,52 @@ body{
 
 label{
     text-transform: uppercase;
-    display: block
+    display: block;
+
+    color: #dad7cd;
 }
 
-/* .hero {
+.content{
+    background-color: #344E41;
+    width: 50vw;
     height: 100vh;
-    min-height: 100vh;
-    min-width: 60vw;
-}
 
-.hero::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to bottom right, var(--color-primary), #000);
     position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 40%;
+    right: 0%;
+
+    border-left: 3px solid #dad7cd;
 }
 
-.hero__video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 100%;
-} */
+.content-para{
+    font-size: 1.3rem;
+
+    margin: 26px;
+    margin-bottom: 200px;
+
+    color: #dad7cd;
+}
+
+.form{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.form-group{
+    margin: 26px;
+}
+
+.form-control{
+    border: none;
+    border-bottom: #023047 3px solid;
+    
+    outline: none;
+
+    overflow: hidden;
+
+    padding: 5px;
+}
+
+.form-control:active{
+    outline: none;
+    border-bottom: #023047 4px solid;
+}
