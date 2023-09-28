@@ -35,6 +35,13 @@ input{
 
     position: relative;
     top: 20vh;
+
+    color: white;
+    background-color: #023047;
+
+
+    width: 60vw;
+    height: 15vh;
 }
 
 .logo-text{
@@ -44,8 +51,14 @@ input{
 }
 
 .logo-image{
-    width: 10px;
-    height: 10px;
+    margin-right: 500px;
+
+    mix-blend-mode: multiply;
+
+    color: white;
+
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+    filter: contrast(200%)
 }
 
 .right{
