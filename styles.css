@@ -3,7 +3,12 @@
     font-family: "Gill Sans", sans-serif;
     text-transform: uppercase;
 
-    --text-color:#dad7cd;
+    --text-color: #dad7cd;
+    --logo-background: #023047;
+    --content-color: #344E41; 
+    --content-form-color: #344e41;
+    --form-bg-color: #606c38;
+    --form-bg-bs-color: #242914;
 }
 
 body{
@@ -37,7 +42,7 @@ input{
     top: 20vh;
 
     color: white;
-    background-color: #023047;
+    background-color: var(--logo-background);
 
 
     width: 60vw;
@@ -58,7 +63,7 @@ input{
     color: white;
 
     filter: drop-shadow(16px 16px 20px red) invert(75%);
-    filter: contrast(200%)
+    filter: contrast(200%);
 }
 
 .right{
@@ -74,14 +79,14 @@ input{
 }
 
 .content{
-    background-color: #344E41;
+    background-color: var(--content-color);
     width: 50vw;
     height: 101.5vh;
 
     position: absolute;
     right: 0%;
 
-    border-left: 3px solid #dad7cd;
+    border-left: 3px solid var(--text-color);
 }
 
 .content-para{
@@ -90,19 +95,23 @@ input{
     margin: 26px;
     margin-bottom: 200px;
 
-    color: #dad7cd;
+    color: var(--text-color);
 }
 
 .form{
     display: flex;
     flex-flow: row wrap;
+
+    background-color: var(--form-bg-color);
+
+    box-shadow: 5px 15px 30px var(--form-bg-bs-color);
 }
 
 .form-button{
     padding: 10px 20px;
 
     background-color: transparent;
-    color: #dad7cd;
+    color: var(--text-color);
 
     border-radius: 3%;
 
@@ -135,7 +144,7 @@ input{
     width: 180px;
 }
 
-.form-control:active{
+.form-control:focus{
     outline: none;
     border-bottom: #f0ebd8 4px solid;
 }
