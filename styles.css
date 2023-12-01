@@ -68,6 +68,7 @@ input{
 
 .right{
     width: 60vw;
+    height: 100vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -76,6 +77,8 @@ input{
 .video-bg{
     position: absolute;
     top: 0;
+
+    height: 100vh;
 }
 
 .content{
